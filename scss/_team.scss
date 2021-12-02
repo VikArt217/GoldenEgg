@@ -1,0 +1,43 @@
+.team {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%), url(../img/team-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 40px 0 25px;
+
+	h4 {
+		color: $white;
+		text-align: center;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 117%;
+		letter-spacing: 0.5em;
+		text-transform: uppercase;
+	}
+}
+
+.team__container {
+	@include flex(space-between, center);
+	margin-top: 50px;
+}
+
+.team__text {
+	color: $white;
+	width: 50%;
+	max-width: 600px;
+	text-align: center;
+}
+
+.team__img {
+	width: 50%;
+	max-width: 500px;
+	position: relative;
+	.circle {
+		left: 0;
+		transform: translate(-40%, -50%);
+	}
+
+	img {
+		@include img;
+	}
+}
