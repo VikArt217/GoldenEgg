@@ -1,0 +1,78 @@
+.events {
+	background: url(../img/events-bg.jpg) center / cover no-repeat;
+	padding: 45px 0 45px;
+
+	h4 {
+		color: $white;
+		font-size: 12px;
+		line-height: 117%;
+		letter-spacing: 0.5em;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+.events__container {
+	@include flex(space-between, center);
+	margin: 45px auto;
+}
+
+.left__event {
+	position: relative;
+
+	.circle {
+		left: 0;
+		transform: translate(-40%, -50%);
+	}
+	.event__title {
+		right: 0;
+	}
+}
+
+.right__event {
+	position: relative;
+
+	.circle {
+		right: 0;
+		transform: translate(40%, -50%);
+	}
+		.event__title {
+			left: 0;
+			transform: scale(-1);
+		}
+}
+
+.left__event,
+.right__event {
+	img {
+		@include img;
+	}
+}
+
+.event__title {
+	background: $black;
+	border-radius: 0px 5px 5px 0px;
+	font-family: $title;
+	color: $white;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 50%;
+	text-transform: uppercase;
+	padding: 30px 20px;
+	position: absolute;
+	writing-mode: vertical-rl;
+	top: 0;
+	height: 100%;
+}
+
+.events__contacts {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 100%;
+	color: $white-opacity;
+	text-align: center;
+	a {
+		color: $white-opacity;
+	}
+	
+}
