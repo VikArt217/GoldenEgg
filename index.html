@@ -121,8 +121,8 @@
 					<h2>Заказать столик</h2>
 					<form class="order__form" action="">
 						<input type="text" placeholder="Имя" required>
-						<input type="text" placeholder="Email" required>
-						<input type="text" placeholder="Телефон" required>
+						<input type="email" placeholder="Email" required>
+						<input type="tel" placeholder="Телефон" required>
 						<div class="order__select">
 							<select required>
 								<option value="">Кол-во людей</option>
@@ -156,7 +156,7 @@
 						href="tel:+380987291367">+38098 729 13 67</a>/<a href="tel:+380974587879">+38097 458 78 79</a>
 				</div>
 			</div>
-		</section>
+		</section> 
 		<!-- /.order -->
 
 		<section class="special-offer">
@@ -516,18 +516,66 @@
 					<div class="circle"></div>
 					<div class="event__title">Cвадебный банкет</div>
 				</div>
-					<div class="right__event">
-							<div class="event__title">Kорпоративные вечеринки</div>
-						<img class="event__img" src="img/event2.png" alt="">
-						<div class="circle"></div>
-					</div>
-			</div>	
+				<div class="right__event">
+					<div class="event__title">Kорпоративные вечеринки</div>
+					<img class="event__img" src="img/event2.png" alt="">
+					<div class="circle"></div>
+				</div>
+			</div>
 			<div class="container events__contacts">По вопросам частных мероприятий звоните:
 				<a href="tel:+380987291367">+38098 729 13 67</a>/<a href="tel:+380974587879">+38097 458 78 79</a>
 				или используйте контактную форму.
 			</div>
 		</section>
-  или используйте контактную форму.
+
+		<section class="contacts" id="contacts">
+			<h2 class="contacts__title">Контакты</h2>
+			<p class="intro contacts__intro">Вы можете оставить нам сообщение через форму ниже, или любым другим, удобным вам
+				способом</p>
+			<form class="container contacts__form" action="">
+				<input type="text" placeholder="Имя" required>
+				<input type="email" placeholder="Email" required>
+				<input type="tel" placeholder="Телефон" required>
+				<textarea placeholder="Сообщения"></textarea>
+				<div class="contacts__data-submit">
+					<div class="contacts__data">
+						<div class="contacts__data-item">
+							<svg>
+								<use xlink:href="img/sprite-icons.svg#point"></use>
+							</svg>
+							<span>пр-т. Победы, 105, Мариуполь</span>
+						</div>
+
+						<div class="contacts__data-item">
+							<svg>
+								<use xlink:href="img/sprite-icons.svg#phone"></use>
+							</svg>
+							<a href="tel:+380987291367">+38098 729 13 67</a>
+						</div>
+
+						<div class="contacts__data-item">
+							<svg>
+								<use xlink:href="img/sprite-icons.svg#mail"></use>
+							</svg>
+							<a href="mailto:info@goldenegg.com">info@goldenegg.com</a>
+						</div>
+
+					</div>
+					<button type="submit">Отправить сообщение</button>
+				</div>
+			</form>
+		</section> 
+
+		<div class="map">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2715.6675608721325!2d37.658449915364955!3d47.105587430446185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e6e61344f2caf5%3A0x351bd6ad53325060!2z0L_RgNC-0YHQvy4g0J_QvtCx0LXQtNGLLCAxMDUsINCc0LDRgNC40YPQv9C-0LvRjCwg0JTQvtC90LXRhtC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDg3NTAw!5e0!3m2!1sru!2sby!4v1639044626198!5m2!1sru!2sby"
+				width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div> 
+
+		<div class="footer">
+			&copy; Copyright <a href="#">LectorWeb</a> 2021
+		</div>
+
 	</div>
 	<!-- /.wrapper -->
 
